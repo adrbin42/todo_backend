@@ -7,21 +7,20 @@
   </head>
   <body>
     <section class="todoapp">
+      <a href='/'>
+        <div><p>Add more items</p></div>
+      </a>
       <header class="header">
         <h1>todos</h1>
-        <form action='/' method='post'>
-          <input class="new-todo" name="todoListItem" placeholder="What needs to be done?" autofocus>
-          <input type="button" value="Add Item">
-        </form>
+        <input class="new-todo" name="todoListItem" placeholder="What needs to be done?" autofocus>
       </header>
       <section class="main">
-        <!-- <form>
           <ul class="todo-list">
-            <li><input type="button" name="complete" value = "Mark Complete" class="completedTasks">{{todoItems}}</li>
+            <li>{{todoItems}}<input type="button" name="complete" value = "Mark Complete" class="completedTasks"></li>
           </ul>
-        </form> -->
       </section>
     </section>
+    {{name}}
     <script src="main.js"></script>
   </body>
 </html>
