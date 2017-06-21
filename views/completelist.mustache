@@ -10,14 +10,21 @@
       <a href='/'>
         <div><p>Add more items</p></div>
       </a>
-      <header class="header">
+      <!-- <header class="header">
         <h1>todos</h1>
-        <input class="new-todo" name="todoListItem" placeholder="What needs to be done?" autofocus>
-      </header>
+        <input class="new-todo" name="todoListItem"
+        placeholder="What needs to be done?" autofocus>
+      </header> -->
       <section class="main">
+        {{#todoItems}}
           <ul class="todo-list">
-            <li>{{todoItems}}<input type="button" name="complete" value = "Mark Complete" class="completedTasks"></li>
+            <li>{{.}}<input type="button" name="complete"
+              value = "Mark Complete" class="completedTasks"></li>
           </ul>
+        {{/todoItems}}
+      </section>
+      <section class="showlist">
+
       </section>
     </section>
     {{name}}
