@@ -32,6 +32,10 @@ app.get('/todo', function(req,res){
   res.render('completelist', {todoItems: todoItems});
 });
 
+app.post('/strikethrough', function(req,res){
+  
+});
+
 app.listen(3000, function(){
   console.log('Running on localhost:3000');
 });

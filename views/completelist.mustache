@@ -16,12 +16,15 @@
         placeholder="What needs to be done?" autofocus>
       </header> -->
       <section class="main">
+        <form action="/strikethrough"  method="post">
         {{#todoItems}}
           <ul class="todo-list">
-            <li>{{.}}<input type="button" name="complete"
+            <li>{{.}}<input type="submit" name="complete"
               value = "Mark Complete" class="completedTasks"></li>
           </ul>
         {{/todoItems}}
+        <del>{{.}}</del>
+      </form>
       </section>
       <section class="showlist">
 
